@@ -60,6 +60,9 @@ from torchdata.datapipes.iter.load.s3io import (
     S3FileListerIterDataPipe as S3FileLister,
     S3FileLoaderIterDataPipe as S3FileLoader,
 )
+from torchdata.datapipes.iter.load.bigquery import (
+    BigQueryPageLoaderIterDataPipe as BigQueryPageLoader,
+)
 from torchdata.datapipes.iter.transform.bucketbatcher import (
     BucketBatcherIterDataPipe as BucketBatcher,
     InBatchShufflerIterDataPipe as InBatchShuffler,
@@ -139,6 +142,7 @@ __all__ = [
     "AISFileLoader",
     "BatchMapper",
     "Batcher",
+    "BigQueryPageLoader",
     "BucketBatcher",
     "Bz2FileLoader",
     "CSVDictParser",
